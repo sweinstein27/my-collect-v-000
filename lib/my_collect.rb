@@ -10,10 +10,10 @@
 # end
 
 
-def my_collect
-    new_ary = []
-    self.each do |elem|
-      new_ary << yield(elem)
+def my_collect(collection)
+    result = []
+    self.each do |element|
+      result << block.call(element)
     end
-    new_ary
   end
+  
