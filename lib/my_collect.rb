@@ -4,7 +4,7 @@ def my_collect(collection)
   new_collection = []
   while i < collection.length
     yield collection[i]
-    binding.pry 
+    binding.pry
     i += 1
     new_collection << collection[i]
   end
