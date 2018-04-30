@@ -17,4 +17,3 @@ def my_collect
     end
     new_ary
   end
-end
